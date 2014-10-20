@@ -10,11 +10,9 @@
 
     <title></title>
 
-    <!-- Bootstrap core CSS -->
     <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this scaffold -->
     <link href="${request.static_url('shorty_ui:static/theme.css')}" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -33,10 +31,12 @@
       </div>
 
       <div class="col-sm-12">
-        <form class="form-horizontal" role="form" method="post" action="/add">
+        <form class="form-horizontal" role="form" method="post" action="/add" id="urlform">
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="text" class="form-control" name="longUrl" placeholder="${longUrl}">
+              <input type="url" class="form-control" name="longUrl" placeholder="${longUrl}"
+                data-bv-notempty="true"
+              >
             </div>
           </div>
           <button type="submit" class="pull-left btn btn-primary">Shorten</button>
@@ -49,10 +49,14 @@
 
     </div> <!-- /container -->
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#urlform').bootstrapValidator();
+      })   
+    </script>
+
   </body>
 </html>
