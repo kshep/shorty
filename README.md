@@ -44,6 +44,6 @@ TODO
 * <del>Document scalability issues</del> - (see [scalability](scalability.md))
 * <del>Add URL caching via memcached</del>
 * Add React <del>(+ Bootstrap)</del> UI to Pyramid app
-* Add basic URL metrics
-* Add user/account management
+* Add basic URL [metrics][metrics.md]
+* Add [user/account management][users.md]
 * Expose API
