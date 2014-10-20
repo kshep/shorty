@@ -20,5 +20,4 @@ shorty_ui/scripts/initializedb.py
 shorty_ui/static/pyramid-16x16.png
 shorty_ui/static/pyramid.png
 shorty_ui/static/theme.css
-shorty_ui/templates/add.pt
 shorty_ui/templates/home.pt

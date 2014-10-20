@@ -18,6 +18,7 @@ requires = [
     'zope.sqlalchemy',
     'waitress',
     'mysql-python',
+    'python-memcached',
     ]
 
 setup(name='shorty_ui',
