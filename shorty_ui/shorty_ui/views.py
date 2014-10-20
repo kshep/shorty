@@ -49,7 +49,8 @@ def add_url(request):
         DBSession.add(shortUrl)
         shortUrl = DBSession.query(ShortUrl).filter_by(long_url=longUrl).first()
         shortUrl.label = base_encode(shortUrl.id)
-        request.cache.set(shortUrl.label,longUrl)
+        ## Looks like python-memcached serializes data and the node-memcached doesn't
+        # request.cache.set(shortUrl.label,longUrl)  
 
     return {'baseUrl': BASE_URL, 'longUrl': longUrl, 'shortUrl': shortUrl}
 
