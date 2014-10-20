@@ -8,7 +8,7 @@ from .models import (
     ShortUrl,
     )
 
-BASE_URL = 'http://kshep.net'
+BASE_URL = 'http://localhost:7654' # Assume shorty_resolver is running locally on 7654
 ALPHABET = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 def base_encode(num, alphabet=ALPHABET):
