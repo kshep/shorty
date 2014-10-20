@@ -37,7 +37,7 @@ def base_decode(str, alphabet=ALPHABET):
 
     return num
 
-@view_config(route_name='add', renderer='templates/add.pt')
+@view_config(route_name='add', renderer='templates/home.pt')
 def add_url(request):
 
     longUrl = request.params['longUrl']
@@ -58,4 +58,4 @@ def home_view(request):
         one = DBSession.query(ShortUrl).filter(ShortUrl.id == 1).first()
     except DBAPIError:
         return Response("Can't connect to MySQL", content_type='text/plain', status_int=500)
-    return {'project': 'shorty'}
+    return {'longUrl': 'Enter URL'}

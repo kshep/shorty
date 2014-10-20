@@ -36,11 +36,15 @@
         <form class="form-horizontal" role="form" method="post" action="/add">
           <div class="form-group">
             <div class="col-sm-12">
-              <input type="text" class="form-control" name="longUrl" placeholder="Enter URL">
+              <input type="text" class="form-control" name="longUrl" placeholder="${longUrl}">
             </div>
           </div>
           <button type="submit" class="pull-left btn btn-primary">Shorten</button>
         </form>
+      </div>
+
+      <div class="short_url col-sm-12" tal:condition="exists:shortUrl">
+        Short URL: <b>${baseUrl}/${shortUrl.label}</b>
       </div>
 
     </div> <!-- /container -->
