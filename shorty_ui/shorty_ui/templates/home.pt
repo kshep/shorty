@@ -8,7 +8,7 @@
     <meta name="author" content="Ken Sheppardson">
     <link rel="shortcut icon" href="${request.static_url('shorty_ui:static/pyramid-16x16.png')}">
 
-    <title></title>
+    <title>Shorty</title>
 
     <link href="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
     <link href="${request.static_url('shorty_ui:static/theme.css')}" rel="stylesheet">
@@ -49,13 +49,13 @@
 
     </div> <!-- /container -->
 
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
     <script>
       $(document).ready(function() {
         $('#urlform').bootstrapValidator();
-      })   
+      })
     </script>
 
   </body>
