@@ -40,7 +40,7 @@ TODO
 * <del>Build initial Pyramid app with SQLAlchemy scaffolding</del>
 * <del>Build initial Node.js resolver app</del>
 * <del>Initial docs</del>
-* Document scalability issues
+* <del>Document scalability issues</del> - (see [scalability](scalability.md))
 * Add React <del>(+ Bootstrap)</del> UI to Pyramid app
 * Add URL caching via memcached
 * Add basic URL metrics
