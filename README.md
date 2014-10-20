@@ -16,10 +16,10 @@ Installation
 TODO
 ----
 
-* Build initial Pyramid app with SQLAlchemy scaffolding
+* <del>Build initial Pyramid app with SQLAlchemy scaffolding</del>
 * Build initial Node.js resolver app
 * Initial docs
-* Add React (+ Bootstrap) UI to Pyramid app
+* Add React <del>(+ Bootstrap)</del> UI to Pyramid app
 * Add URL caching via memcached
 * Add basic URL metrics
 * Add user/account management
