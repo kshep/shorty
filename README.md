@@ -16,6 +16,7 @@ Prerequisites:
 * Python 2.7, working in a virtualenv with `$VENV` set accordingly
 * MySQL 5 installed and running, with a "shorty:shorty" user created
 * Node.js 0.10
+* Memcached listening on localhost 11211
 
 In the `shorty_ui` directory:
 
@@ -41,8 +42,8 @@ TODO
 * <del>Build initial Node.js resolver app</del>
 * <del>Initial docs</del>
 * <del>Document scalability issues</del> - (see [scalability](scalability.md))
+* <del>Add URL caching via memcached</del>
 * Add React <del>(+ Bootstrap)</del> UI to Pyramid app
-* Add URL caching via memcached
 * Add basic URL metrics
 * Add user/account management
 * Expose API
