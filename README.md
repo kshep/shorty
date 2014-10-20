@@ -39,7 +39,8 @@ TODO
 
 * <del>Build initial Pyramid app with SQLAlchemy scaffolding</del>
 * <del>Build initial Node.js resolver app</del>
-* Initial docs
+* <del>Initial docs</del>
+* Document scalability issues
 * Add React <del>(+ Bootstrap)</del> UI to Pyramid app
 * Add URL caching via memcached
 * Add basic URL metrics
