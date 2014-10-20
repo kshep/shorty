@@ -4,7 +4,7 @@ Scalability
 What scalability issues would we need to address if we deployed
 this to production?
 
-=== Short URL Namespace
+### Short URL Namespace
 
 Shorty creates short URLs by inserting the long URL into a URL table
 then converting the resulting row ID from an integer to a base62 string
@@ -21,7 +21,7 @@ already in the system other than searching the DB. It might make sense
 to construt an existence check using a Bloom filter.
 
 
-=== Database Performance
+### Database Performance
 
 One of the first bottlenecks we'd be likely to hit woudl be MySQL
 performance. Aside from basic sizing/tuning of the server, the
@@ -34,12 +34,12 @@ DB server
 * We'd also want to look into options like Percona XtraDB Cluster or 
 MySQL Cluster from Oracle for reliability/fail-over
 
-=== UI Performance
+### UI Performance
 
 With a ramp up in the number of users, we'd want to deploy additional
 app servers running shorty_ui, likely behind haproxy or an AWS ELB
 
-=== Resolver Performance
+### Resolver Performance
 
 As with the UI app servers, we'd need to scale up the number of
 geographically distributed resolver instances.
