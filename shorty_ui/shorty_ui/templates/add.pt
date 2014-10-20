@@ -44,7 +44,7 @@
       </div>
 
       <div class="short_url col-sm-12">
-        Short URL: <b>${shortUrl}</b>
+        Short URL: <b>${baseUrl}/${shortUrl.label}</b>
       </div>
 
     </div> <!-- /container -->
