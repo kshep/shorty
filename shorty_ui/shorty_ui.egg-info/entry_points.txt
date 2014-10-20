@@ -1,0 +1,5 @@
+      [paste.app_factory]
+      main = shorty_ui:main
+      [console_scripts]
+      initialize_shorty_ui_db = shorty_ui.scripts.initializedb:main
+      
