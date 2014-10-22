@@ -28,6 +28,7 @@ In the `shorty_resolver` directory:
 
     % npm install mysql
     % npm install node-mysql
+    % npm install memcached
     % node resolver.js
 
 You'll have two webapps running:
